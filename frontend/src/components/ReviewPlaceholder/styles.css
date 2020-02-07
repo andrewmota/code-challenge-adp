@@ -1,0 +1,9 @@
+.review-loader {
+  height: 50px;
+  border-radius: 4px;
+  background-color: #bbb;
+  animation-name: loader;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

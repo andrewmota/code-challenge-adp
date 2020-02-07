@@ -1,0 +1,13 @@
+.review {
+  padding: 0 0 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.review .user, .review .text {
+  font-style: italic;
+}
+
+.review .user {
+  font-weight: bold;
+}
