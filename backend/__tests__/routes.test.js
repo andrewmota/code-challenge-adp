@@ -14,7 +14,7 @@ describe('Testing all the routes', () => {
 
   it('should test GET /businesses with invalid limit parameter', async () => {
     const { status } = await request(app).get(`/businesses?limit=${'a'}`);
-    expect(status).toEqual(404);
+    expect(status).toEqual(400);
   });
 
   it('should test GET /reviews with valid limit parameter', async () => {
@@ -29,6 +29,6 @@ describe('Testing all the routes', () => {
 
   it('should test GET /reviews with invalid business id', async () => {
     const { status } = await request(app).get(`/reviews/not_found`);
-    expect(status).toEqual(404);
+    expect(status).toEqual(400);
   });
 });
